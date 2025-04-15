@@ -2,11 +2,12 @@
   "name": "apito-marinheiro",
   "version": "1.0.0",
   "description": "toques de apito marinheiro",
-  "main": "index.js",
+  "main": "/src/index.html",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "node src/server.js"
   },
   "repository": {
     "type": "git",
