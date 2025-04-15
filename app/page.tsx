@@ -15,11 +15,14 @@ export default function Home() {
         <h1 className="text-xl font-bold text-center">Toques de Apito</h1>
         <h2 className="text-sm font-bold text-center">Contra-Mestre CEA</h2>
       </header>
-      <button onClick={() => scrollToElement("apitos-rotina")} className="w-5/6 block cursor-pointer mx-auto rounded-full p-2 border mb-2 bg-sky-300 hover:bg-sky-800 hover:text-white">Apitos de rotina</button>
-      <button onClick={() => scrollToElement("apitos-cerimonia")} className="w-5/6 block cursor-pointer mx-auto rounded-full p-2 border mb-2 bg-sky-300 hover:bg-sky-800 hover:text-white">Apitos de cerimônia</button>
+
+      <div className="max-w-2xl mx-auto">
+        <button onClick={() => scrollToElement("apitos-rotina")} className="w-5/6 block cursor-pointer mx-auto rounded-full p-2 border-transparent mb-2 bg-sky-300 hover:bg-sky-800 hover:text-white">Apitos de rotina</button>
+        <button onClick={() => scrollToElement("apitos-cerimonia")} className="w-5/6 block cursor-pointer mx-auto rounded-full p-2 border-transparent mb-2 bg-sky-300 hover:bg-sky-800 hover:text-white">Apitos de cerimônia</button>
+      </div>
       
       {/* Apitos de rotina*/}
-      <div id="apitos-rotina">
+      <div id="apitos-rotina" className="max-w-2xl mx-auto">
         <h3 className="text-lg font-bold mb-2">Apitos de rotina</h3>
         <ol className="mx-2 list-decimal list-inside">
           <li className="mb-2">
@@ -61,7 +64,7 @@ export default function Home() {
       </div>
 
       {/* Apitos de cerimônia*/}
-      <div id="apitos-cerimonia">
+      <div id="apitos-cerimonia" className="max-w-2xl mx-auto">
         <h3 className="text-lg font-bold mb-2">Apitos de cerimônia (Autoridades)</h3>
         <ol className="mx-2 list-decimal list-inside">
           <li className="mb-2">
